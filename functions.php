@@ -75,6 +75,11 @@ function wpml_get_lang() {
   return ICL_LANGUAGE_CODE;
 }
 
+
+add_theme_support( 'custom-header', array(
+ 'video' => true,
+) );
+
 // Js files integration and string translations in js files. 
 //Please remove from header all js files and include hear what you need in your project. Jquery library and functions js files already connected.
 function pw_load_scripts() {
@@ -130,3 +135,7 @@ add_action('login_footer', 'my_addition_to_login_footer');
 function my_addition_to_login_footer() {
      echo '<p id="tel">For any question or request : <b>514-277-7747</b></p>';
 }
+
+
+
+

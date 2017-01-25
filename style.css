@@ -1,164 +1,133 @@
-/*
-THEME NAME: project name
-AUTHOR: ShooGa marketing
-VERSION: 1.0
-*/
+div {
+  color: orange; }
 
-/*Sample fontface*/
+.con {
+  widows: 20px;
+  height: 20px;
+  background-color: yellow; }
+  .con .ro {
+    widows: 10px;
+    height: 10px;
+    background-color: orange; }
+    .con .ro p {
+      color: #fff; }
+
 html[xmlns] .clearfix {
-	display: block;
-}
- 
+  display: block; }
+
 * html .clearfix {
-	height: 1%;
-}
-
-@font-face {
-	font-family: ItaliaStdBook;
-	src: url('fonts/italiastd-book-webfont.eot');
-	src: local('ItaliaStdBook'),
-		 url('fonts/italiastd-book.otf') format('opentype'),
-		 url('fonts/italiastd-book-webfont.svg#ItaliaStdBook') format('svg');
-}
-
-body {
-	margin:0;
-	padding:0;
-	font-family:Verdana, Geneva, sans-serif;
-	font-size:12px;
-}
+  height: 1%; }
 
 a {
-	outline:none;	
-	color:#000;
-}
+  color: green;
+  font-size: 16px;
+  cursor: pointer; }
 
-a img, img {
-	border:none;
-}
-.logo img{
-	width: 100%;
-}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff; }
 
-.wrapper {
-	max-width:1000px;
-	margin:0px auto;
-}
+.container {
+  background-color: #f7f7f7;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  /*	padding: 15px;*/
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.23);*/ }
 
-.container{
-	clear: both;
-	margin: 20px 0;
-}
+img {
+  width: 100%;
+  height: auto; }
 
-/*menu desktop and mobile*/
-.header-menu ul li{
-	list-style-type: none;
-	padding: 10px;
-}
-.top-menu ul li{
-	float: left;	
-} 
-.top-menu-mobile ul li{
-	float: none;
-	position: relative;
-}
-.top-menu-mobile,.top-menu-mobile .slideMenuOpen {
-	display: none;
-}
+span a {
+  margin-left: 15px; }
 
-.openMobMenu{
-	cursor: pointer;
-	text-align: center;
-	padding: 10px;
-}
+.container .menu-item-language-current {
+  display: none; }
 
-/*.current-menu-item a{
-	color: #000;
+/* .col-md-4{
+ 	margin-top: 15px;
+ }*/
+@font-face {
+  font-family: "icomoon";
+  src: url("fonts/icomoon/icomoon.eot");
+  src: url("fonts/icomoon/icomoon.eot?#iefix") format("embedded-opentype"), url("fonts/icomoon/icomoon.woff") format("woff"), url("fonts/icomoon/icomoon.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "FontAwesome";
+  src: url("fonts/FontAwesome/fontawesome-webfont.eot");
+  src: url("fonts/FontAwesome/fontawesome-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/FontAwesome/fontawesome-webfont.woff") format("woff"), url("fonts/FontAwesome/fontawesome-webfont.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+.ico_1:before {
+  font-family: "icomoon";
+  content: '\e900';
+  font-size: 100px;
+  color: cornflowerblue; }
+
+.ico_2:before {
+  content: "\e901";
+  font-family: "icomoon";
+  font-size: 100px;
+  color: cornflowerblue; }
+
+.ico_3:before {
+  content: "\e902";
+  font-family: "icomoon";
+  font-size: 100px;
+  color: cornflowerblue; }
+
+.ico_1, .ico_2, .ico_3, .fa_ico {
+  padding: 25px;
+  display: inline-block; }
+
+.fa_ico:before {
+  content: "\f2b7";
+  font-family: "FontAwesome";
+  font-size: 100px;
+  color: cornflowerblue; }
+
+.center_1 {
+  display: block;
+  max-width: 700px;
+  width: 100%;
+  margin: 0 auto; }
+
+/*SERVICE*/
+.tab-content {
+  padding: 15px;
+  margin-top: 100px; }
+
+.parent-page {
+  padding: 15px; }
+
+span {
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  padding: 25px;
+  color: #333;
+  font-weight: bold; }
+
+.col-md-4 {
+  border: 1px solid #003d77;
+  background-color: #fff;
+  padding: 0 !important; }
+
+.active span {
+  background-color: #003d77;
+  color: #FFF; }
+
+/*.container span:before{
+  content: "";
+  position: relative;
+  display: inline-table;
+  height: 50px;
+  width: 50px;
+  border-radius: 100%;
+  border: 6px solid #fff;
 }*/
+/*SERVICE END*/
 
-.sub-menu{
-	width: 100%;
-	position: static;
-}
-
-.sub-menu li{
-	float: none!important;
-}
-
-
-
-/*end desktop and mobile*/
-/*Celarfix hack*/
-.clearfix:after {
-	content: ".";
-	display: block;
-	clear: both;
-	visibility: hidden;
-	line-height: 0;
-	height: 0;
-}
-/*FORMIDABLE STYLE*/
-fieldset div:nth-child(odd){
-	float: left!important;
-	width: 49%;
-	display: block;
-}
-fieldset div:nth-child(even){
-	float: right!important;
-	width: 49%;
-	display: block;
-}
-.with_frm_style .frm_form_field{
-	clear: none!important;
-}
-.frm_submit{
-	width: auto!important;
-}
-/*End FORMIDABLE STYLE*/
- 
- /* Gallery */
-
- .gallery_block{
- 	max-height: 350px;
- 	min-height:350px!important;
- 	height: 350px;
- 	text-align: center;
- }
-  .gallery_block img{
- 	width: auto!important;
-	max-width: 100%;
-	max-height: inherit!important;
-	height: auto!important;
- }
- .tubButton button{
- 	margin-right: 20px;
- }
-
-/* Google Maps */
-#map_wrapper{
-	height: 400px;
-}
-#map_canvas{
-    width: 100%;
-    height: 100%;
-}
-/* SVG Social Icons */
-.social-icons ul{
-	padding-left: 0px;
-}
-.social-icons li{
-	display: inline-block;
-	list-style: none;
-}
-.social-icons li.facebook:hover path{
-	fill: #3a5795;
-	/*stroke: #3a5795; this will be add bordered color across transparent part*/ 
-}
-.social-icons li.twitter:hover path{
-	fill: #55acee;
-	/*stroke: #55acee; this will be add bordered color across transparent part*/
-}
-.social-icons li.google-plus:hover path{
-	fill: #DD4C3B;
-	/*stroke: #DD4C3B; this will be add bordered color across transparent part*/
-}
+/*# sourceMappingURL=style.css.map */
